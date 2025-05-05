@@ -1,0 +1,123 @@
+html {
+    margin: 1em;
+    font-size: 16px;
+    line-height: 1.45;
+}
+
+
+main {
+    box-shadow: 1em 1em rgba(0, 0, 0, 0.1);
+}
+
+header {
+    display: block;
+    unicode-bidi: isolate;
+}
+
+main > section {
+    border: .2em black double;
+    padding: 1em;
+    padding-top: 0;
+}
+
+section {
+    display: block;
+    unicode-bidi: isolate;
+}
+
+p, li, p a {
+    line-height: 1.75rem;
+    font-family: var(--serif);
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+}
+
+table, th, td {
+  border: 1px dotted black;
+  border-collapse: collapse;
+  padding: 10px
+}
+
+a {
+    color: blue;
+}
+
+div {border-style: double;}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 24px;
+}
+
+footer small {
+    text-align: center;
+}
+
+nav {
+    margin: 1em 0;
+    padding: 0.5em 0;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    display: inline;
+    text-align: right
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-family: var(--sans-serif);
+    font-weight: 600;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 800px;
+    background: white; /* ensure background hides content under it */
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    padding: 1em 0;
+    z-index: 1000;
+}
+
+body {
+    margin: 0 auto;
+    padding-top: 100px; /* prevent content from being hidden under fixed navbar */
+    color: black;
+    font-family: var(--sans-serif);
+    width: 800px;
+    max-width: 100%;
+    margin-bottom: 100px;
+}
+
+.blog-date {
+display: inline-block;
+  width: 90px; /* Keep consistent width to align titles */
+  color: gray;
+  font-size: 0.95em;
+}
